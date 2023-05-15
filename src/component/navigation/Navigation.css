@@ -24,14 +24,7 @@ a {
    height: fit-content;
    padding: 0 10px;
 }
-.nav-container nav{
-   background-color: black;
-   display: flex;
-   align-items: center;
-   height: 50px;
-   height: fit-content;
 
-}
 .nav-container ul{
    display: flex;
    align-items: center;
