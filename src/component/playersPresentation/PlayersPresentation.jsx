@@ -20,7 +20,7 @@ export default function PlayersPresentation({ players }) {
                         <a
                            href="#popup"
                            id="openPopUp"
-                           style={{ color: "green", width: "100%" }}
+                           style={{ color: "green", width: "100%", display: "block" }}
                         >
                            Detail
                         </a>
