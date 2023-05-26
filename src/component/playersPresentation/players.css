@@ -19,6 +19,7 @@
 
 .container .column .card {
    background-color: antiquewhite;
+   text-align: center;
 }
 
 .container .column .card button {

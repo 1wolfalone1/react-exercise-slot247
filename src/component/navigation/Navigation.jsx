@@ -10,7 +10,7 @@ export default function Navigation() {
       >
          <ul>
             <li className="active">
-               <a href="#home">Home</a>
+               <a href="/">Home</a>
             </li>
             <li>
                <a href="#news">News</a>

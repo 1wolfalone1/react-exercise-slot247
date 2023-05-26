@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./players.css";
+import { Link } from "react-router-dom";
 export default function PlayersPresentation({ players }) {
    const [player, setPlayer] = useState([]);
    console.log(player);
@@ -11,25 +12,15 @@ export default function PlayersPresentation({ players }) {
                   <img src={`../../${player.img}`} alt="" />
                   <h3>{player.name}</h3>
                   <p className="title">{player.club}</p>
-                  <p>
-                     <button
-                        onClick={() => {
-                           setPlayer(player);
-                        }}
-                     >
-                        <a
-                           href="#popup"
-                           id="openPopUp"
-                           style={{ color: "green", width: "100%" , display: "block" }}
-                        >
-                           Detail
-                        </a>
-                     </button>
-                  </p>
+                  <Link to={`detail/${player.id}`}>
+                     <p>
+                        <button>Detail</button>
+                     </p>
+                  </Link>
                </div>
             </div>
          ))}
-         <div id="popup" className="overlay">
+         {/* <div id="popup" className="overlay">
             <div className="popup">
                <img src={player.img} alt="" />
                <h2>{player.name}</h2>
@@ -38,7 +29,7 @@ export default function PlayersPresentation({ players }) {
                </a>
                <div className="content">{player.info}</div>
             </div>
-         </div>
+         </div> */}
       </div>
    );
 }
