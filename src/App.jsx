@@ -1,13 +1,13 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Navigation from "./component/navigation/Navigation";
-import Footer from "./component/footer/Footer";
-import Main from "./component/main/Main";
+import Navigation from "./container/navigation/Navigation";
+import Footer from "./container/footer/Footer";
+import Main from "./container/main/Main";
 import { Routes, Route } from "react-router-dom";
-import Detail from "./component/player-detail/Detail";
+import Detail from "./container/player-detail/Detail";
 import { Box, ThemeProvider, createTheme } from "@mui/material";
 import React, { useMemo, useState } from "react";
-import getDesignTokens from "./component/theme/themeMui";
+import getDesignTokens from "./container/theme/themeMui";
 import { useTheme } from "@emotion/react";
 
 function App() {
@@ -24,12 +24,18 @@ function App() {
    const theme = useMemo(() => createTheme(getDesignTokens(mode)), [mode]);
    return (
       <ThemeProvider theme={theme}>
-         <Box colorMode={colorMode}>
+         <Box
+            colorMode={colorMode}
+            sx={{
+               backgroundColor: theme.palette.background.default,
+            }}
+         >
             <Navigation colorMode={colorMode} />
             <Box
                sx={{
                   minHeight: "100vh",
                   backgroundColor: theme.palette.background.default,
+                  position: "relative",
                }}
             >
                <Routes>
@@ -37,8 +43,8 @@ function App() {
                   <Route path="/detail/:id" element={<Detail />}></Route>
                   {/* <Route path="/contact" element={<Contact />}></Route> */}
                </Routes>
+               <Footer />
             </Box>
-            <Footer />
          </Box>
       </ThemeProvider>
    );

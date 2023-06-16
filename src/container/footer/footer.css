@@ -5,4 +5,9 @@
    padding: 10px;
    display: flex;
    justify-content: center;
+   position: absolute;
+   bottom: 0;
+   transform: translateY(100%);
+   left: 0;
+   right: 0;
 }

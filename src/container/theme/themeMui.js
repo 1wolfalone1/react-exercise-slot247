@@ -24,7 +24,7 @@ const getDesignTokens = (mode) => ({
               },
               background: {
                  default: "#eefdfa",
-                 paper: "#2a2a2a",
+                 paper: "#dfdfdf",
                  nav: "#b0dabb",
               },
            }
@@ -37,12 +37,12 @@ const getDesignTokens = (mode) => ({
               },
               background: {
                  default: "#252b2a",
-                 paper: "#2a2a2a",
+                 paper: "#545454",
                  nav: "#191919",
               },
               text: {
                  primary: "#ffffff",
-                 secondary: "#cbffba",
+                 secondary: "#a0c294",
                  brands: "#cbffba",
               },
               brands: {
