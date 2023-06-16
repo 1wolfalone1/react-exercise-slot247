@@ -10,7 +10,7 @@ export default function Players({ players }) {
       <>
          <Grid2 container spacing={4} margin={5}>
             {players && players.map((player) => <Grid2 xl={4} lg={4} md={6} sm={12} xs={12}>
-               <PlayerCard player={player}/>
+               <PlayerCard player={player} key={player.id}/>
             </Grid2>)}
          </Grid2>
       </>
