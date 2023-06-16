@@ -1,0 +1,49 @@
+.container {
+   min-height: calc(100vh - var(--h-height-nav));
+
+}
+
+.product-card {
+   margin: 36px auto;
+   width: 60%;
+   position: relative;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.303);
+   height: fit-content;
+}
+
+.product-tumb {
+   width: 100%;
+   background-color: rgb(175, 175, 175);
+   text-align: center;
+
+}
+
+.product-tumb img {
+   width: 70%;
+}
+
+.container .badge {
+
+   position: absolute;
+   left: 0;
+   top: 100px;
+   background-color: red;
+   padding: 10px;
+   color: white;
+   font-weight: 500;
+}
+.product-details{
+   padding: 10px 24px;
+}
+.product-details h4{
+   font-size: 36px;
+   margin: 16px 0;
+}
+
+.product-price {
+   color: rgb(112, 186, 0);
+   font-size: 36px;
+}
+.product-bottom-details {
+   color: rgb(145, 145, 145);
+}
