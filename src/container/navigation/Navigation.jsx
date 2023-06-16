@@ -14,7 +14,7 @@ import ContactsOutlinedIcon from "@mui/icons-material/ContactsOutlined";
 export default function Navigation({ colorMode }) {
    const navigate = useNavigate();
    const theme = useTheme();
-   const [value, setValue] = useState();
+   const [value, setValue] = useState(1);
    const handleChange = (e, value) => {
       setValue(value);
    };
