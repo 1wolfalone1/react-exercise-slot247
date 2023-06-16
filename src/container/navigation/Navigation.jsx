@@ -67,6 +67,7 @@ export default function Navigation({ colorMode }) {
                      value={1}
                   />
                   <Tab
+                    onClick={() => navigate("/about")}
                      label={
                         <Box sx={{ display: "flex" }}>
                            <InfoOutlinedIcon /> <Typography> About</Typography>
@@ -76,6 +77,7 @@ export default function Navigation({ colorMode }) {
 
                   />
                   <Tab
+                  onClick={() => navigate("/news")}
                      label={
                         <Box sx={{ display: "flex" }}>
                            <ArticleOutlinedIcon /> <Typography> New</Typography>
@@ -86,6 +88,7 @@ export default function Navigation({ colorMode }) {
                   />
 
                   <Tab
+                       onClick={() => navigate("/contact")}
                      label={
                         <Box sx={{ display: "flex" }}>
                            <ContactsOutlinedIcon />{" "}
