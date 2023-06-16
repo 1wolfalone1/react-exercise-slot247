@@ -5,12 +5,12 @@ export default function PlayersPresentation({ players }) {
    const [player, setPlayer] = useState([]);
    console.log(player);
    return (
-      <div className="container">
+      <div className="container-players">
          {players.map((player) => (
-            <div className="column" key={player.id}>
+            <div className="column2" key={player.id}>
                <div className="card">
                   <img src={`../../${player.img}`} alt="" />
-                  <h3>{player.name}</h3>
+                  <h5>{player.name}</h5>
                   <p className="title">{player.club}</p>
                   <Link to={`detail/${player.id}`}>
                      <p>

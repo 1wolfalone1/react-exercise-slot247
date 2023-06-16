@@ -1,4 +1,4 @@
-.container {
+.container-players {
    width: 100%;
    height: fit-content;
    display: flex;
@@ -7,29 +7,29 @@
 }
 
 
-.container .column {
-   flex-basis: 25%;
+.container-players .column2 {
+   flex-basis: 30%;
    padding: 10px;
 
 }
 
-.container .column img {
+.container-players .column2 img {
    width: 100%;
 }
 
-.container .column .card {
+.container-players .column2 .card {
    background-color: antiquewhite;
    text-align: center;
 }
 
-.container .column .card button {
+.container-players .column2 .card button {
    background-color: rgb(0, 0, 0);
    width: 100%;
    color: white;
    padding: 10px;
 }
 
-.container .column .card button:hover {
+.container-players .column2 .card button:hover {
    cursor: pointer;
    background-color: rgb(33, 33, 33);
 }

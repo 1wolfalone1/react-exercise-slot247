@@ -3,9 +3,12 @@ import "./detail.css";
 import React from "react";
 
 import { data } from "../../assets/store/ListOfPlayers.js";
+import { useTheme } from "@emotion/react";
 
 export default function Detail() {
    const userName = useParams();
+   const theme = useTheme();
+   console.log(theme);
    const player = data.find((obj) => {
       return obj.id == userName.id;
    });
