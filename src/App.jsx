@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.scss";
 import Navigation from "./container/navigation/Navigation";
 import Footer from "./container/footer/Footer";
@@ -8,7 +7,6 @@ import Detail from "./container/player-detail/Detail";
 import { Box, ThemeProvider, createTheme } from "@mui/material";
 import React, { useMemo, useState } from "react";
 import getDesignTokens from "./container/theme/themeMui";
-import { useTheme } from "@emotion/react";
 import ContactUs from "./container/contact-us/ContactUs";
 import AboutUs from "./container/about-us/AboutUs";
 import News from "./container/news/News";
