@@ -28,7 +28,7 @@ export default function Detail() {
          >
             <div className="badge">{player.name}</div>
             <Box>
-               <img src={`../${player.img}`} alt="" style={{ width: "100%" }} />
+               <img src={player.img} alt="" style={{ width: "100%" }} />
             </Box>
             <Box sx={{ backgroundColor: theme.palette.background.paper2, padding: 2, position: 'relative' }}>
                <Typography variant="h4" color="text.brands">

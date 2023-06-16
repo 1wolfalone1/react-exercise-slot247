@@ -25,7 +25,7 @@ export default function PlayerCard({ player }) {
    return (
       <Box sx={s.container}>
          <Box sx={s.image}>
-            <img src={`../../${player.img}`} alt="" style={{ width: "100%" }} />
+            <img src={player.img} alt="" style={{ width: "100%" }} />
          </Box>
          <Box sx={s.content}>
             <Box>
