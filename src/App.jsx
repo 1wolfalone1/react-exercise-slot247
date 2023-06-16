@@ -1,5 +1,5 @@
 import logo from "./logo.svg";
-import "./App.css";
+import "./App.scss";
 import Navigation from "./container/navigation/Navigation";
 import Footer from "./container/footer/Footer";
 import Main from "./container/main/Main";
