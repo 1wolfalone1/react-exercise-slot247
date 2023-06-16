@@ -11,6 +11,7 @@ import { useNavigate } from "react-router-dom";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 import ArticleOutlinedIcon from "@mui/icons-material/ArticleOutlined";
 import ContactsOutlinedIcon from "@mui/icons-material/ContactsOutlined";
+import PersonAddAlt1Icon from '@mui/icons-material/PersonAddAlt1';
 export default function Navigation({ colorMode }) {
    const navigate = useNavigate();
    const theme = useTheme();
@@ -80,7 +81,7 @@ export default function Navigation({ colorMode }) {
                   onClick={() => navigate("/news")}
                      label={
                         <Box sx={{ display: "flex" }}>
-                           <ArticleOutlinedIcon /> <Typography> New</Typography>
+                           <ArticleOutlinedIcon /> <Typography> News</Typography>
                         </Box>
                      }
                      value={3}
@@ -96,6 +97,17 @@ export default function Navigation({ colorMode }) {
                         </Box>
                      }
                      value={4}
+
+                  />
+                  <Tab
+                       onClick={() => navigate("/add")}
+                     label={
+                        <Box sx={{ display: "flex" }}>
+                           <PersonAddAlt1Icon />{" "}
+                           <Typography>Add player</Typography>
+                        </Box>
+                     }
+                     value={5}
 
                   />
                </Tabs>
